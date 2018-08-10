@@ -32,7 +32,7 @@ brew install findutils
 brew install gnu-sed --with-default-names
 brew install bash
 brew install bash-completion2
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+if ! grep -fq '/usr/local/bin/bash' /etc/shells; then
   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
   chsh -s /usr/local/bin/bash;
 fi;
@@ -52,7 +52,7 @@ brew install python3
 pip3 install --upgrade pip setuptools wheel
 brew install ruby-build
 brew install rbenv
-LINE='eval "$(rbenv init -)"'
+LINE=""eval "$(rbenv init -)"""
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 brew install tree
 brew install vbindiff

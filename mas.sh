@@ -7,6 +7,13 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # MAS apps
+echo ""
+echo "------------------------------"
+echo "Signing into Apple App Store."
+echo "------------------------------"
+echo ""
+read -rp "Please enter your Apple ID to login. "
+mas signin "$REPLY"
 # RESTed
 mas install 421879749
 # 1Password

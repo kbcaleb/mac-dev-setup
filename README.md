@@ -6,42 +6,42 @@ Bring good DevOps practices to new workstation kicks.
 ![Jesus Baby](assets/jesus.gif)
 
 ## Installation
-If you want to install specific parts then replace **all** with components you would like from.
 ```
-curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | bash -s all
+bash <(curl -fsSL https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/development/setup.sh) -s all
 ```
-* common
-* security
-* devops
-* webdev
-* pydata
+If you want to install specific parts then replace **all** with the components you would like from.
 * bigdata
+* common
 * database
-* mobile
-* misc
+* devops
 * mas
+* misc
+* mobile
 * osx
+* pydata
+* security
+* webdev
 
 _Example:_
 ```
-curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | bash -s common webdev devops
+bash <(curl -fsSL https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/development/setup.sh) -s dotfiles security
 ```
 
 ## Packages
 * ### Common Apps and Tools
     * [alfred](https://www.alfredapp.com/)
     * [atom](https://atom.io)
-    * [bash4](https://www.gnu.org/software/bash/)
     * [bash-completion](https://github.com/scop/bash-completion)
+    * [bash4](https://www.gnu.org/software/bash/)
     * [bfg](https://rtyley.github.io/bfg-repo-cleaner/https://rtyley.github.io/bfg-repo-cleaner/)
     * [binutils](https://www.gnu.org/software/binutils/)
     * [coreutils](http://www.gnu.org/software/coreutils/coreutils.html)
     * [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html)
     * [findutils](https://www.gnu.org/software/findutils/)
-    * [git](https://git-scm.com)
     * [git-extras](https://github.com/tj/git-extras)
     * [git-flow](https://github.com/nvie/gitflow)
     * [git-lfs](https://git-lfs.github.com/)
+    * [git](https://git-scm.com)
     * [gnu-sed](https://www.gnu.org/software/sed/)
     * [google-chrome](https://www.google.com/chrome/)
     * [grep](https://www.gnu.org/software/grep/manual/grep.html)
@@ -84,13 +84,13 @@ curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | b
     * [dnscrypt-proxy](https://github.com/jedisct1/dnscrypt-proxy)
     * [fcrackzip](https://github.com/hyc/fcrackzip)
     * [foremost](https://foremost.sourceforge.io/)
+    * [gpg-suite](https://gpgtools.org/)
     * [hashpump](https://github.com/bwall/HashPump)
     * [hydra](https://github.com/vanhauser-thc/thc-hydra)
     * [java8](https://java.com)
     * [john](http://www.openwall.com/john/)
     * [knock](http://www.zeroflux.org/projects/knock)
     * [nmap](https://nmap.org/)
-    * [gpg-suite](https://gpgtools.org/)
     * [socat](http://www.dest-unreach.org/socat/doc/socat.html)
     * [sqlmap](http://sqlmap.org/)
     * [tcpflow](https://github.com/simsong/tcpflow)
@@ -117,6 +117,7 @@ curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | b
     * [node](https://nodejs.org/en/)
     * [packer](https://www.packer.io/)
     * [pycharm](https://www.jetbrains.com/pycharm/)
+    * [shellcheck](https://github.com/koalaman/shellcheck)
     * [terraform](https://www.terraform.io/)
     * [travis](https://travis-ci.org/)
     * [troposphere](https://github.com/cloudtools/troposphere)
@@ -135,8 +136,8 @@ curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | b
     * [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)
     * [postman](https://www.getpostman.com/)
     * [selenium](https://www.seleniumhq.org/)
-    * [sfnt2woff](https://github.com/bramstein/homebrew-webfonttools)
     * [sfnt2woff-zopfli](https://github.com/bramstein/homebrew-webfonttools)
+    * [sfnt2woff](https://github.com/bramstein/homebrew-webfonttools)
     * [webkit2png](http://www.paulhammond.org/webkit2png/)
     * [woff2](https://github.com/google/woff2)
 
@@ -189,6 +190,6 @@ curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | b
     * [zterm](http://www.dalverson.com/zterm/)
 
 ## Thanks to...
-* [Mathias Bynens](https://mathiasbynens.be/) and his [dotfiles repo](https://github.com/mathiasbynens/dotfiles)
-* [Donne Martin](http://donnemartin.com/) and his [dev-mac repo](https://github.com/donnemartin/dev-setup/)
-* [Kristov Atlas](http://kristovatlas.com/) and his [osx-config-check repo](https://github.com/kristovatlas/osx-config-check)
+* [Mathias Bynens](https://mathiasbynens.be/) and the [dotfiles repo](https://github.com/mathiasbynens/dotfiles)
+* [Donne Martin](http://donnemartin.com/) and the [dev-mac repo](https://github.com/donnemartin/dev-setup/)
+* [Kristov Atlas](http://kristovatlas.com/) and theyg [osx-config-check repo](https://github.com/kristovatlas/osx-config-check)

@@ -1,0 +1,16 @@
+sudo: required
+
+language: bash
+
+services:
+    - docker
+
+before_install:
+    - docker pull koalaman/shellcheck
+
+script:
+    - 'find . -name ".bash*" | while read file; do docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/$file; done'
+    - 'find . -name "*.sh" | while read file; do docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/$file; done'
+
+matrix:
+    fast_finish: true
