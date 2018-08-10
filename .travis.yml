@@ -9,8 +9,8 @@ before_install:
     - docker pull koalaman/shellcheck
 
 script:
-    - docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/.bash*
-    - docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/*.sh
+    - 'find . -name ".bash*" | while read file; do docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/$file; done'
+    - 'find . -name "*.sh" | while read file; do docker run -v $(pwd):/scripts koalaman/shellcheck /scripts/$file; done'
 
 matrix:
     fast_finish: true
