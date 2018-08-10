@@ -26,17 +26,17 @@ function setUp() {
     fi
 
     # Pulling repo into ~
-#    if [ ! -d "~/mac-dev-setup" ]; then
-#        echo ""
-#        echo "------------------------------"
-#        echo "Pulling mac-dev-setup repo into ~ ."
-#        echo "------------------------------"
-#        echo ""
-#        cd ~ && git clone https://github.com/kbcaleb/mac-dev-setup.git
-#    else
-#        cd ~/mac-dev-setup
-#        git pull origin master;
-#    fi
+   if [ ! -d "~/mac-dev-setup" ]; then
+       echo ""
+       echo "------------------------------"
+       echo "Pulling mac-dev-setup repo into ~ ."
+       echo "------------------------------"
+       echo ""
+       cd ~ && git clone https://github.com/kbcaleb/mac-dev-setup.git
+   else
+       cd ~/mac-dev-setup
+       git pull origin master;
+   fi
 
     # Loop arguments
     for ARG in "$@"
