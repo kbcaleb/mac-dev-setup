@@ -3,6 +3,8 @@
 ## Motivation
 Bring good DevOps practices to new workstation kicks.
 
+![Jesus Baby](assets/jesus.gif)
+
 ## Installation
 If you want to install specific parts then replace **all** with components you would like from.
 ```
