@@ -6,10 +6,10 @@ Bring good DevOps practices to new workstation kicks.
 ![Jesus Baby](assets/jesus.gif)
 
 ## Installation
-If you want to install specific parts then replace **all** with components you would like from.
 ```
-curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | bash -s all
+bash <(curl -fsSL https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/development/setup.sh) -s all
 ```
+If you want to install specific parts then replace **all** with the components you would like from.
 * common
 * security
 * devops
@@ -21,12 +21,12 @@ curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | b
 * misc
 * mas
 * osx
-
+I
 _Example:_
 ```
-curl https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/master/setup.sh | bash -s common webdev devops
+bash <(curl -fsSL https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/development/setup.sh) -s all
 ```
-
+I
 ## Packages
 * ### Common Apps and Tools
     * [alfred](https://www.alfredapp.com/)
