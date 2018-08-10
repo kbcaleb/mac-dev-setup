@@ -1,0 +1,19 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    showInvisibles: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "a8e744a4-07eb-4d27-b75e-dc92f5929207"
+  kite:
+    editorMetricsEnabled: "no"
+    showEditorVacanciesNotificationOnStartup: false
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
