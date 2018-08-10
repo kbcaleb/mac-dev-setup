@@ -1,2 +1,3 @@
-1. curl -L https://raw.githubusercontent.com/kbcaleb/dotfiles/master/new-mac-setup.sh | bash
-2. 
+!. dotfiles
+2. common
+3. python

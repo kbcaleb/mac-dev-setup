@@ -10,3 +10,6 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSECURE_REDIRECT=1
 export HOMEBREW_CASK_OPTS=--require-sha
+
+# Android
+export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"

@@ -15,4 +15,4 @@ rsync --exclude ".git/" \
     -avh --no-perms . ~;
 chmod 700 ~/.ssh;
 chmod 700 ~/.gnupg;
-set -- -f; source bootstrap.sh
+source ~/.bash_profile;
