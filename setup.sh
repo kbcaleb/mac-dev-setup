@@ -122,14 +122,14 @@ function setUp() {
             echo ""
             ./misc.sh
         fi
-        if [ $ARG == "mas" ] || [ $ARG == "all" ]; then
-            echo ""
-            echo "------------------------------"
-            echo "Setting up MAS apps."
-            echo "------------------------------"
-            echo ""
-            ./mas.sh
-        fi
+        # if [ $ARG == "mas" ] || [ $ARG == "all" ]; then
+        #     echo ""
+        #     echo "------------------------------"
+        #     echo "Setting up MAS apps."
+        #     echo "------------------------------"
+        #     echo ""
+        #     ./mas.sh
+        # fi
         if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
             echo ""
             echo "------------------------------"

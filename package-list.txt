@@ -28,4 +28,5 @@ platformio-ide-terminal@2.8.3
 project-manager@3.3.6
 script@3.18.1
 todo-show@2.3.0
+sort-lines@0.18.0
 
