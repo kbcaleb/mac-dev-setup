@@ -57,7 +57,7 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 brew install tree
 brew install vbindiff
 brew install zopfli
-brew install speedtest
+brew install speedtest-cli
 brew install xpdf
 brew install xz
 brew install pandoc
