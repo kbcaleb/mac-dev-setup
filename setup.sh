@@ -35,7 +35,7 @@ function setUp() {
        cd ~ && git clone https://github.com/kbcaleb/mac-dev-setup.git
    else
        cd ~/mac-dev-setup
-       git pull origin master;
+       git pull origin master
    fi
 
     # Loop arguments
@@ -142,7 +142,8 @@ function setUp() {
 }
 
 read -p "This script may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
-if [[ $REPLY =~ ^[Yy]$ ]]; then
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
     setUp $@
 fi
 
