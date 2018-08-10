@@ -12,8 +12,8 @@ echo "------------------------------"
 echo "Signing into Apple App Store."
 echo "------------------------------"
 echo ""
-read -p "Please enter your Apple ID to login. "
-mas signin $REPLY
+read -rp "Please enter your Apple ID to login. "
+mas signin "$REPLY"
 # RESTed
 mas install 421879749
 # 1Password

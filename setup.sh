@@ -26,7 +26,7 @@ function setUp() {
     fi
 
     # Pulling repo into ~
-   if [ ! -d "~/mac-dev-setup" ]; then
+   if [ ! -d ~/mac-dev-setup ]; then
        echo ""
        echo "------------------------------"
        echo "Pulling mac-dev-setup repo into ~ ."
@@ -34,15 +34,15 @@ function setUp() {
        echo ""
        cd ~ && git clone https://github.com/kbcaleb/mac-dev-setup.git
    else
-       cd ~/mac-dev-setup
+       cd ~/mac-dev-setup || exit
        git pull origin master
    fi
 
     # Loop arguments
     for ARG in "$@"
     do
-        cd ~/mac-dev-setup
-        if [ $ARG == "dotfiles" ] || [ $ARG == "all" ]; then
+        cd ~/mac-dev-setup || exit
+        if [ "$ARG" == "dotfiles" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up dotfiles."
@@ -50,7 +50,7 @@ function setUp() {
             echo ""
             ./dotfiles.sh
         fi
-        if [ $ARG == "common" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "common" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting common tools."
@@ -58,7 +58,7 @@ function setUp() {
             echo ""
             ./common.sh
         fi
-        if [ $ARG == "security" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "security" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up security tools."
@@ -66,7 +66,7 @@ function setUp() {
             echo ""
             ./security.sh
         fi
-        if [ $ARG == "devops" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "devops" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up devops tools."
@@ -74,7 +74,7 @@ function setUp() {
             echo ""
             ./devops.sh
         fi
-        if [ $ARG == "webdev" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "webdev" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up webdev tools."
@@ -82,7 +82,7 @@ function setUp() {
             echo ""
             ./webdev.sh
         fi
-        if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "pydata" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up python data tools."
@@ -90,7 +90,7 @@ function setUp() {
             echo ""
             ./pydata.sh
         fi
-        if [ $ARG == "bigdata" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "bigdata" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up big data tools."
@@ -98,7 +98,7 @@ function setUp() {
             echo ""
             ./bigdata.sh
         fi
-        if [ $ARG == "database" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "database" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up database tools."
@@ -106,7 +106,7 @@ function setUp() {
             echo ""
             ./database.sh
         fi
-        if [ $ARG == "mobile" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "mobile" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up mobile tools."
@@ -114,7 +114,7 @@ function setUp() {
             echo ""
             ./mobile.sh
         fi
-        if [ $ARG == "misc" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "misc" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Setting up misc tools."
@@ -122,7 +122,7 @@ function setUp() {
             echo ""
             ./misc.sh
         fi
-        # if [ $ARG == "mas" ] || [ $ARG == "all" ]; then
+        # if [ "$ARG" == "mas" ] || [ "$ARG" == "all" ]; then
         #     echo ""
         #     echo "------------------------------"
         #     echo "Setting up MAS apps."
@@ -130,7 +130,7 @@ function setUp() {
         #     echo ""
         #     ./mas.sh
         # fi
-        if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
+        if [ "$ARG" == "osx" ] || [ "$ARG" == "all" ]; then
             echo ""
             echo "------------------------------"
             echo "Configuring OSX."
@@ -141,11 +141,11 @@ function setUp() {
     done
 }
 
-read -p "This script may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
+read -rp "This script may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    setUp $@
+    setUp "$@"
 fi
 
 unset setUp

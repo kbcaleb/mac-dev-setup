@@ -11,8 +11,10 @@ rsync --exclude ".git/" \
     --exclude ".osx" \
     --exclude "*.sh" \
     --exclude "*.txt" \
+    --exclude ".travis.yml" \
     --exclude "README.md" \
     -avh --no-perms . ~;
 chmod 700 ~/.ssh;
 chmod 700 ~/.gnupg;
-source ~/.bash_profile;
+# shellcheck disable=SC1090
+source "$HOME"/.bash_profile;

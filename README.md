@@ -117,6 +117,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/kbcaleb/mac-dev-setup/develo
     * [node](https://nodejs.org/en/)
     * [packer](https://www.packer.io/)
     * [pycharm](https://www.jetbrains.com/pycharm/)
+    * [shellcheck](https://github.com/koalaman/shellcheck)
     * [terraform](https://www.terraform.io/)
     * [travis](https://travis-ci.org/)
     * [troposphere](https://github.com/cloudtools/troposphere)

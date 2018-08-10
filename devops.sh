@@ -38,7 +38,7 @@ brew install dnscrypt-proxy
 brew install logstash
 brew install kibana
 brew install heroku
-brew install
+brew install shellcheck
 brew cask install homebrew/cask-versions/docker-edge --appdir="/Applications"
 brew cask install virtualbox --appdir="/Applications"
 brew cask install vagrant --appdir="/Applications"
