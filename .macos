@@ -192,8 +192,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 rm -rf ~/Library/Application Support/Dock/desktoppicture.db
 sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 sudo rm -rf /System/Library/CoreServices/DefaultDesktop.png
-sudo ln -s ./walls/vader.png /System/Library/CoreServices/DefaultDesktop.png
-osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/'"`whoami`"'/dotfiles/walls/vader.png"'
+sudo ln -s ./assets/vader.png /System/Library/CoreServices/DefaultDesktop.png
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/Users/'"`whoami`"'/mac-dev-setup/assets/vader.png"'
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
