@@ -61,8 +61,8 @@ brew install speedtest-cli
 brew install xpdf
 brew install xz
 brew install pandoc
-brew install screenresolution
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+brew cask install iterm2 --appdir="/Applications"
 brew cask install alfred --appdir="/Applications"
 brew cask install atom --appdir="/Applications"
 apm install --packages-file package-list.txt
@@ -72,6 +72,7 @@ brew cask install macdown --appdir="/Applications"
 brew cask install slack --appdir="/Applications"
 brew cask install xquartz --appdir="/Applications"
 brew cask install java8 --appdir="/Applications"
+brew cask install java --appdir="/Applications"
 brew cask install prefs-editor --appdir="/Applications"
 brew install bfg
 

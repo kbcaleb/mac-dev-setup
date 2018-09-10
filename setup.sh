@@ -12,7 +12,7 @@ function setUp() {
     echo "Updating OSX. If this requires a restart, re-run setup.sh again."
     echo "------------------------------"
     echo ""
-    sudo softwareupdate -ir
+    sudo softwareupdate -irv
 
     # Install Homebrew
     if ! hash brew 2>/dev/null
