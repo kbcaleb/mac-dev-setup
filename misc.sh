@@ -25,17 +25,15 @@ brew cask install amazon-drive --appdir="/Applications"
 brew cask install dropbox --appdir=/Applications
 brew cask install google-drive-file-stream --appdir="/Applications"
 export HOMEBREW_CASK_OPTS=--require-sha
-brew cask install unetbootin --appdir="/Applications"
-brew cask install gimp --appdir="/Applications"
-brew cask install zterm --appdir="/Applications"
-brew cask install iterm2 --appdir="/Applications"
-brew cask install vlc --appdir="/Applications"
-brew cask install amazon-music --appdir="/Applications"
-brew cask install cyberduck --appdir="/Applications"
-brew cask install inkscape --appdir="/Applications"
-brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/645dbb8228ec2f1f217ed1431e188687aac13ca5/Casks/filebot.rb
-brew install screenresolution
-brew install grafana
-brew install prometheus
+brew cask install etcher --appdir="/Applications"
+# brew cask install gimp --appdir="/Applications"
+# brew cask install zterm --appdir="/Applications"
+# brew cask install vlc --appdir="/Applications"
+# brew cask install amazon-music --appdir="/Applications"
+# brew cask install cyberduck --appdir="/Applications"
+# brew cask install inkscape --appdir="/Applications"
+# brew cask install https://raw.githubusercontent.com/Homebrew/homebrew-cask/645dbb8228ec2f1f217ed1431e188687aac13ca5/Casks/filebot.rb
+# brew install grafana
+# brew install prometheus
 # Remove outdated versions from the cellar.
 brew cleanup

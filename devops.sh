@@ -43,7 +43,6 @@ brew cask install homebrew/cask-versions/docker-edge --appdir="/Applications"
 brew cask install virtualbox --appdir="/Applications"
 brew cask install vagrant --appdir="/Applications"
 brew cask install pycharm-ce --appdir="/Applications"
-brew cask install github --appdir="/Applications"
 
 # Remove outdated versions from the cellar.
 brew cleanup
